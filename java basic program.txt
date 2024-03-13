@@ -1,0 +1,399 @@
+*******patten program******
+
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        int i,j;
+        int n=sc.nextInt();
+        for(i=5;i<=n;i--){
+            for(j=0;j<=i;j++){
+                System.out.print((char)(a+j)+" ");
+            }
+            System.out.println();
+        } 
+    for(i=0;i<=5;i++){
+            for(j=0;j<=i;j++){
+                System.out.print((char)(a+j)+" ");
+            }
+            System.out.println();
+}
+}
+}
+
+*******if else***********
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    	System.out.print("Enter the value ");
+	    int a=sc.nextInt();
+		if(a==1){
+		    System.out.print("java");
+		}else 
+		{
+		    System.out.print(0);
+		}
+	}
+}
+
+*******CGPA 0f student**********
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    
+	    int studentcgpa=sc.nextInt();
+		switch (studentcgpa) {
+		    case 10:
+		    System.out.print("CGPA 10 you are outstanding");
+		   break;
+		   case 9:
+		    System.out.print(" CGPA 9 you are Excelling");
+		    break;
+		  default:
+		    System.out.print("CGPA 8 or less you are progressing");
+		}
+	}
+}
+
+******while********
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int i=0;
+	    while(i<=n){
+	    
+		    System.out.print("Loop");
+		    i++;
+		}
+	}
+}
+
+*******FOR********
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    for(int i=0;i<=n;i++){
+	    
+		    System.out.println("Loop");
+		    
+		}
+	}
+}
+
+********Do ,while*******
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    do {
+	      System.out.print("Loop");
+	    }
+	    while (1<=n);
+		  }
+	}
+
+**********factoral********
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    
+	    int n=sc.nextInt();
+	    for(int i=1;i<=n;i++)
+	    {
+	        if(n%i==0)
+	        {
+	            System.out.println(i+" ");
+	        }
+	    }
+}
+}
+
+
+************return value******
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    int n=sc.nextInt();
+	    int s=0;
+	    while(n>0){
+	        s=s*10 + n%10;
+	        n = n/10;
+	    }
+             System.out.println(s);
+	}
+}
+
+************palindrome*******
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    int n=sc.nextInt();
+	    int a=n;
+	    int s=0;
+	    while(n>0){
+	        s=s*10 + n%10;
+	        n = n/10;
+	        
+	    }
+	    if(a==s)
+	    {
+	       System.out.println("YES");
+	    }
+	    else
+	    {
+	       System.out.println("No"); 
+	    }
+	}     
+	}
+
+**********butterfuly******
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    
+	    int x=sc.nextInt();
+	    for(int i=0;i<x;i++){
+	        for(int j=0;j<x;j++){
+	            if(i==j||i+j==x-1){
+	                  System.out.print("*");
+	            }
+	            else{
+	                System.out.print(" ");
+	            }
+	        }
+	             System.out.println();
+	        }
+	    
+	}
+}
+*********s pattern********
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    
+	    int x=sc.nextInt();
+	    for(int i=1;i<x;i++){
+	        for(int j=1;j<x;j++){
+	            if(i==1||i==3||i==5||i==2&&j==1||i==4&&j==5){
+	                  System.out.print("*");
+	            }
+	            else{
+	                System.out.print(" ");
+	            }
+	        }
+	             System.out.println();
+	        }
+	    
+	}
+}
+	
+*********add,sub,multi,dividion******
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    int a=sc.nextInt();
+	    int b=sc.nextInt();
+	    System.out.println("Enter your choice:");
+	    System.out.println("Addition:");
+	    System.out.println("Subtraction:");
+	    System.out.println("Multiplication:");
+	    System.out.println("Division");
+	    int c=sc.nextInt();
+	    switch(c){
+	        case 1:
+	            System.out.println("ADD is:"+(a+b));
+	            break;
+	        case 2:
+	            System.out.println("SUB is:"+(a-b));
+	            break;
+	        case 3:
+	            System.out.println("MULTI is:"+(a*b));
+	            break;
+	        case 4:
+	            System.out.println("DIV is:"+(a/b));
+	            break;
+	        default:
+	             System.out.println("Invalide");
+	             break;
+	            
+	    }
+	}
+}
+
+*********binarystring********
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	   int a=sc.nextInt();
+	    int b=sc.nextInt();
+	    int c=sc.nextInt();
+	    int d=sc.nextInt();
+	    int e=sc.nextInt();
+	    System.out.println(Integer.toBinaryString(a));
+	     System.out.println(Integer.toBinaryString(b));
+	      System.out.println(Integer.toBinaryString(c));
+	       System.out.println(Integer.toBinaryString(d));
+	        System.out.println(Integer.toBinaryString(e));
+		
+	}
+}
+*********hollo sphere*****
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    
+	    int x=sc.nextInt();
+	    for(int i=1;i<x;i++){
+	        for(int j=1;j<x;j++){
+	            if(i==1||i==5||j==1||j==5){
+	                  System.out.print("*");
+	            }
+	            else{
+	                System.out.print(" ");
+	            }
+	        }
+	             System.out.println();
+	        }
+	    
+	}
+}
+*********T pattern*************
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    
+	    int x=sc.nextInt();
+	    for(int i=1;i<x;i++){
+	        for(int j=1;j<x;j++){ 
+	            if(i==1||j==x / 2){
+	                  System.out.print("*");
+	            }
+	            else{
+	                System.out.print(" ");
+	            }
+	        }
+	             System.out.println();
+	        }
+	    
+	}
+}
+
+********D pattern***********
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    
+	    int x=sc.nextInt();
+	    for(int i=1;i<x;i++){
+	        for(int j=1;j<x;j++){ 
+	            if(i==1||i==5||j==2||j==5){
+	                  System.out.print("*");
+	            }
+	            else{
+	                System.out.print(" ");
+	            }
+	        }
+	             System.out.println();
+	        }
+	    
+	}
+}
+
+*******Even and odd*******
+import java.util.*;
+public class Main
+{
+      public static void main (String[]args)
+   {
+       Scanner Sc = new Scanner (System.in);
+       System.out.println ("Enter no of digits : ");
+       int n = Sc.nextInt ();
+       System.out.println ("Enter value : ");
+       int m = Sc.nextInt ();
+       int a,b = 0;
+       for (int i=1;i<=n;i++)
+            {
+              a=m%10;
+              b=b+a;
+              m=m/10;
+              if(a%2==0)
+               {
+                 System.out.println("Even digits : "+a);
+                }
+                else
+                 {
+                   System.out.println ("Odd digits : " + a);
+                }
+         }
+     }
+}
+*********E pattern*******
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    
+	    int x=sc.nextInt();
+	    for(int i=1;i<x;i++){
+	        for(int j=1;j<x;j++){
+	            if(i==1||i==3||i==5||i==2&&j==1||i==4&&j==1){
+	                  System.out.print("*");
+	            }
+	            else{
+	                System.out.print(" ");
+	            }
+	        }
+	             System.out.println();
+	        }
+	    
+	}
+}
+
+
+
+
+
+	    
